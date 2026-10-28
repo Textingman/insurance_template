@@ -1,169 +1,134 @@
+import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] blob opacity-25"
-          style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.4) 0%, transparent 70%)' }} />
-        <div className="absolute bottom-[10%] left-[-5%] w-[400px] h-[400px] blob opacity-20"
-          style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.3) 0%, transparent 70%)' }} />
-      </div>
-
       <Nav />
 
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 text-center relative" style={{ zIndex: 1 }}>
         <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-blue-700 mb-6"
-            style={{ background: 'rgba(147,197,253,0.2)', border: '1px solid rgba(147,197,253,0.4)' }}>
-            <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            Our Services
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-cyan-700 mb-6"
+            style={{ background: 'rgba(8,145,178,0.1)', border: '1px solid rgba(8,145,178,0.3)' }}>
+            🛡️ Our Services
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
-            Everything you need for
-            <br /><span className="gradient-text-blue">smarter car ownership.</span>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            Everything we do is about
+            <br /><span className="gradient-text-blue">finding you the right coverage.</span>
           </h1>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            From buying your first car to optimizing your insurance and keeping your vehicle in top shape — we&apos;ve got you covered.
+          <p className="text-xl text-gray-500">
+            We offer one service: expert, unbiased auto insurance consultancy. No car buying. No maintenance. Just insurance — done right.
           </p>
         </div>
       </section>
 
-      {/* Main Services */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
-        <div className="max-w-6xl mx-auto space-y-8">
-
-          {/* Car Selection */}
-          <div className="glass-card p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-4xl shadow-lg"
-                  style={{ background: 'linear-gradient(135deg, #1e40af15, #2563eb15)' }}>
-                  🚗
+      {/* Main service */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="glass-card p-10 mb-8">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-cyan-700 mb-4"
+                  style={{ background: 'rgba(8,145,178,0.1)' }}>
+                  🛡️ Insurance Finder · $300 one-time
                 </div>
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <h2 className="text-2xl font-bold text-gray-900">Car Selection Consultancy</h2>
-                  <span className="px-3 py-1 text-xs font-semibold text-blue-700 rounded-full"
-                    style={{ background: 'rgba(30,64,175,0.1)' }}>Most Popular</span>
-                </div>
-                <p className="text-gray-500 mb-6 leading-relaxed">
-                  Choosing the right car is one of the most important financial decisions you&apos;ll make. We help you navigate the process from start to finish — understanding your needs, comparing options, and making a confident purchase.
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Auto Insurance Consultancy</h2>
+                <p className="text-gray-500 leading-relaxed mb-6">
+                  A real consultant reviews your current coverage (or helps you find your first policy), compares options from multiple providers, and gives you clear, honest recommendations — in plain English.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
-                  {['Needs Assessment', 'Budget Planning', 'New vs. Used Analysis', 'Model Comparison', 'Dealer Negotiation Tips', 'Lease vs. Buy Guidance'].map(item => (
-                    <div key={item} className="flex items-center gap-2 p-3 rounded-xl" style={{ background: 'rgba(0,0,0,0.03)' }}>
-                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                      <span className="text-sm text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link href="/car-selection"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
-                  Learn more about Car Selection
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                <Link href="/contact"
+                  className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-2xl shadow-lg hover:opacity-90 transition-all"
+                  style={{ background: 'linear-gradient(135deg, #0891b2, #2563eb)' }}>
+                  Book a Free Consultation →
                 </Link>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { icon: '📞', title: 'We start with a conversation', desc: 'Your consultant talks with you about your vehicle, driving habits, financial situation, and what matters most to you.' },
+                  { icon: '🔍', title: 'We review your current policy', desc: 'We go through your existing coverage line by line — identifying what\'s working, what\'s missing, and what you might be overpaying for.' },
+                  { icon: '📊', title: 'We compare real options', desc: 'We look at multiple providers and coverage levels — not just the ones that pay the highest commissions.' },
+                  { icon: '💡', title: 'We explain it in plain English', desc: 'No jargon. We tell you exactly what each coverage type means and whether you actually need it.' },
+                  { icon: '✅', title: 'You choose with confidence', desc: 'You make the final decision. We\'re here to inform, not to sell you anything.' },
+                ].map(item => (
+                  <div key={item.title} className="flex items-start gap-3 p-4 rounded-2xl" style={{ background: 'rgba(0,0,0,0.03)' }}>
+                    <span className="text-lg flex-shrink-0">{item.icon}</span>
+                    <div>
+                      <p className="font-semibold text-gray-900 text-sm mb-0.5">{item.title}</p>
+                      <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Insurance */}
-          <div className="glass-card p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-4xl shadow-lg"
-                  style={{ background: 'linear-gradient(135deg, #0891b215, #0e7490 15)' }}>
-                  🛡️
-                </div>
+      {/* What we cover */}
+      <section className="py-16 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Coverage types we help you understand</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { icon: '🚗', title: 'Liability Coverage', desc: 'Covers damage you cause to others. We help you understand state minimums vs. what you actually need to protect your assets.' },
+              { icon: '💥', title: 'Collision Coverage', desc: 'Covers damage to your car from accidents. We help you decide if it\'s worth it based on your vehicle\'s value and your deductible.' },
+              { icon: '🌪️', title: 'Comprehensive Coverage', desc: 'Covers non-collision damage — theft, weather, animals. We explain when it makes sense and when it doesn\'t.' },
+              { icon: '🚑', title: 'Uninsured Motorist', desc: 'Protects you when the other driver has no insurance. We explain why this matters more than most people realize.' },
+              { icon: '🏥', title: 'Medical Payments', desc: 'Covers medical expenses after an accident regardless of fault. We help you understand how it interacts with your health insurance.' },
+              { icon: '🔧', title: 'Roadside & Rental', desc: 'Add-on coverages that may or may not be worth it. We help you decide based on your situation.' },
+            ].map(item => (
+              <div key={item.title} className="glass-card p-6">
+                <div className="text-2xl mb-3">{item.icon}</div>
+                <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
               </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <h2 className="text-2xl font-bold text-gray-900">Insurance Consultancy Guidance</h2>
-                  <span className="px-3 py-1 text-xs font-semibold text-cyan-700 rounded-full"
-                    style={{ background: 'rgba(8,145,178,0.1)' }}>Save Money</span>
-                </div>
-                <p className="text-gray-500 mb-6 leading-relaxed">
-                  Auto insurance is confusing by design. We cut through the complexity to help you understand exactly what coverage you need, what you can skip, and how to find the best rates from reputable providers.
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
-                  {['Coverage Review', 'Policy Comparison', 'Rate Shopping', 'Discount Identification', 'Claims Guidance', 'State Requirements'].map(item => (
-                    <div key={item} className="flex items-center gap-2 p-3 rounded-xl" style={{ background: 'rgba(0,0,0,0.03)' }}>
-                      <div className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-                      <span className="text-sm text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link href="/insurance"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
-                  Learn more about Insurance Guidance
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
-            </div>
+            ))}
           </div>
+        </div>
+      </section>
 
-          {/* Maintenance */}
-          <div className="glass-card p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-3xl flex items-center justify-center text-4xl shadow-lg"
-                  style={{ background: 'linear-gradient(135deg, #7c3aed15, #6d28d915)' }}>
-                  🔧
+      {/* Why not just use a comparison site */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="glass-card p-10">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">Why not just use a comparison website?</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                { label: 'Comparison sites', items: ['Show you prices, not coverage quality', 'Can\'t explain what\'s actually covered', 'Earn referral fees from insurers', 'Give generic recommendations', 'Can\'t read your specific policy'] },
+                { label: 'Our consultants', items: ['Review your actual coverage needs', 'Explain every line of your policy', 'Earn a flat fee from you only', 'Give advice tailored to your situation', 'Identify gaps and overpayments'] },
+              ].map(col => (
+                <div key={col.label}>
+                  <p className="font-bold text-gray-900 mb-3">{col.label}</p>
+                  <ul className="space-y-2">
+                    {col.items.map(item => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-gray-500">
+                        <span className="mt-0.5">{col.label === 'Our consultants' ? '✅' : '❌'}</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
-                  <h2 className="text-2xl font-bold text-gray-900">Vehicle Maintenance Planning</h2>
-                  <span className="px-3 py-1 text-xs font-semibold text-purple-700 rounded-full"
-                    style={{ background: 'rgba(124,58,237,0.1)' }}>Extend Vehicle Life</span>
-                </div>
-                <p className="text-gray-500 mb-6 leading-relaxed">
-                  Proper maintenance is the key to a long-lasting, reliable vehicle. We create personalized maintenance schedules, explain what services are truly necessary, and help you find trustworthy mechanics.
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
-                  {['Maintenance Schedules', 'Service Prioritization', 'Cost Estimates', 'Mechanic Selection', 'DIY vs. Shop Guidance', 'Recall Monitoring'].map(item => (
-                    <div key={item} className="flex items-center gap-2 p-3 rounded-xl" style={{ background: 'rgba(0,0,0,0.03)' }}>
-                      <div className="w-1.5 h-1.5 rounded-full bg-purple-500" />
-                      <span className="text-sm text-gray-700">{item}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link href="/maintenance"
-                  className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
-                  Learn more about Maintenance Planning
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
+      <section className="py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Not sure where to start?</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to find the right coverage?</h2>
           <p className="text-lg text-gray-500 mb-8">
-            Book a free consultation and we&apos;ll help you figure out exactly what you need.
+            Book a free consultation and talk to a real person who will review your coverage and help you find the right policy.
           </p>
           <Link href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-2xl shadow-lg hover:opacity-90 transition-all"
-            style={{ background: 'linear-gradient(135deg, #1e40af, #2563eb)' }}>
-            Get a Free Consultation
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
+            className="inline-flex items-center gap-2 px-10 py-5 text-base font-semibold text-white rounded-2xl shadow-xl hover:opacity-90 transition-all"
+            style={{ background: 'linear-gradient(135deg, #0891b2, #2563eb)' }}>
+            Get a Free Consultation →
           </Link>
+          <p className="text-sm text-gray-400 mt-4">$300 one-time fee · No commissions · No hidden costs</p>
         </div>
       </section>
 

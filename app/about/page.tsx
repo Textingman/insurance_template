@@ -1,132 +1,55 @@
+import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import Link from 'next/link';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="fixed inset-0 pointer-events-none overflow-hidden" style={{ zIndex: 0 }}>
-        <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] blob opacity-25"
-          style={{ background: 'radial-gradient(circle, rgba(147,197,253,0.4) 0%, transparent 70%)' }} />
-        <div className="absolute bottom-[10%] left-[-5%] w-[400px] h-[400px] blob opacity-20"
-          style={{ background: 'radial-gradient(circle, rgba(251,191,36,0.3) 0%, transparent 70%)' }} />
-      </div>
-
       <Nav />
 
-      {/* Hero */}
-      <section className="pt-32 pb-16 px-6 text-center relative" style={{ zIndex: 1 }}>
-        <div className="max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-blue-700 mb-6"
-            style={{ background: 'rgba(147,197,253,0.2)', border: '1px solid rgba(147,197,253,0.4)' }}>
-            <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            About Us
+      <section className="pt-32 pb-16 px-6 relative" style={{ zIndex: 1 }}>
+        <div className="max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-cyan-700 mb-6"
+            style={{ background: 'rgba(8,145,178,0.1)', border: '1px solid rgba(8,145,178,0.3)' }}>
+            🛡️ About Us
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
-            Your trusted auto
-            <br /><span className="gradient-text-blue">consultancy partner.</span>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            We work for you —<br />not the insurance companies.
           </h1>
-          <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            We&apos;re a team of automotive and insurance experts dedicated to helping everyday drivers make smarter, more confident decisions about their vehicles.
+          <p className="text-xl text-gray-500 leading-relaxed mb-8">
+            Insurance Consultancy was founded on a simple belief: people deserve honest, unbiased advice about their auto insurance coverage. Not a sales pitch. Not a commission-driven recommendation. Just real guidance from someone who actually understands the fine print.
           </p>
         </div>
       </section>
 
-      {/* Mission */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-500 leading-relaxed mb-6">
-                Buying a car and choosing auto insurance are two of the biggest financial decisions most people make — yet most people feel unprepared and overwhelmed when doing it.
-              </p>
-              <p className="text-lg text-gray-500 leading-relaxed mb-6">
-                We exist to change that. Our mission is to give every driver access to the same expert knowledge that industry insiders have — so you can make decisions with confidence, not guesswork.
-              </p>
-              <p className="text-lg text-gray-500 leading-relaxed">
-                We don&apos;t sell cars. We don&apos;t sell insurance. We work exclusively for you.
-              </p>
-            </div>
-            <div className="glass-card p-8">
-              <div className="space-y-6">
-                {[
-                  { icon: '🎯', title: 'Client-First', desc: 'Every recommendation we make is in your best interest — not a dealer\'s or insurer\'s.' },
-                  { icon: '🔍', title: 'Transparent', desc: 'We explain our reasoning clearly so you understand exactly why we recommend what we do.' },
-                  { icon: '💡', title: 'Expert-Led', desc: 'Our team has decades of combined experience in automotive, insurance, and consumer advocacy.' },
-                  { icon: '🤝', title: 'Accessible', desc: 'Expert guidance shouldn\'t be reserved for the wealthy. We make it available to everyone.' },
-                ].map(item => (
-                  <div key={item.title} className="flex items-start gap-4">
-                    <span className="text-2xl">{item.icon}</span>
-                    <div>
-                      <p className="font-semibold text-gray-900 mb-1">{item.title}</p>
-                      <p className="text-sm text-gray-500">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-12">Our Expertise</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: '🚗',
-                title: 'Automotive Consulting',
-                desc: 'Deep knowledge of vehicle makes, models, reliability ratings, resale values, and market pricing across new, used, and leased vehicles.',
-                skills: ['Vehicle Comparison', 'Market Pricing', 'Reliability Analysis', 'Lease vs. Buy'],
-              },
-              {
-                icon: '🛡️',
-                title: 'Insurance Analysis',
-                desc: 'Expert understanding of auto insurance products, coverage types, state requirements, and how to find the best value for your specific situation.',
-                skills: ['Coverage Review', 'Rate Comparison', 'Discount Identification', 'Claims Guidance'],
-              },
-              {
-                icon: '🔧',
-                title: 'Vehicle Maintenance',
-                desc: 'Comprehensive knowledge of preventive maintenance, service schedules, common repairs, and how to find trustworthy mechanics.',
-                skills: ['Maintenance Schedules', 'Service Recommendations', 'Cost Estimates', 'DIY vs. Shop'],
-              },
-            ].map(area => (
-              <div key={area.title} className="glass-card p-6">
-                <div className="text-3xl mb-4">{area.icon}</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{area.title}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">{area.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {area.skills.map(skill => (
-                    <span key={skill} className="text-xs px-2 py-1 rounded-full font-medium text-blue-700"
-                      style={{ background: 'rgba(30,64,175,0.08)' }}>
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="glass-card p-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Why we exist</h2>
+              <p className="text-gray-500 leading-relaxed mb-4">
+                Most people have no idea if they&apos;re properly covered until something goes wrong. And by then, it&apos;s too late. Insurance agents earn commissions from the policies they sell — which means their advice is never truly neutral.
+              </p>
+              <p className="text-gray-500 leading-relaxed mb-4">
+                We charge a flat fee and work exclusively for our clients. That means we can tell you honestly when you&apos;re overpaying, when you&apos;re underinsured, and what you actually need — without any financial incentive to steer you toward a particular policy.
+              </p>
+              <p className="text-gray-500 leading-relaxed">
+                Our consultants have deep experience with auto insurance markets, coverage types, and carrier practices. We read the fine print so you don&apos;t have to.
+              </p>
+            </div>
+            <div className="space-y-4">
               {[
-                { value: '10,000+', label: 'Clients Served' },
-                { value: '$2,400', label: 'Avg. Annual Savings' },
-                { value: '15+', label: 'Years Experience' },
-                { value: '98%', label: 'Satisfaction Rate' },
-              ].map(stat => (
-                <div key={stat.label}>
-                  <p className="text-3xl font-black gradient-text-blue mb-1">{stat.value}</p>
-                  <p className="text-sm text-gray-500">{stat.label}</p>
+                { icon: '🚫', title: 'No commissions, ever', desc: 'We never earn money from insurance companies. Our only incentive is to give you the best advice.' },
+                { icon: '🔎', title: 'Deep policy expertise', desc: 'We understand coverage types, exclusions, and carrier practices that most consumers never see.' },
+                { icon: '🗣️', title: 'Real people, real conversations', desc: 'You talk to a consultant — not a chatbot, not a form, not an algorithm.' },
+                { icon: '✅', title: 'You make the final call', desc: 'We inform and advise. The decision is always yours.' },
+              ].map(item => (
+                <div key={item.title} className="glass-card p-5 flex items-start gap-4">
+                  <span className="text-2xl flex-shrink-0">{item.icon}</span>
+                  <div>
+                    <p className="font-bold text-gray-900 mb-1">{item.title}</p>
+                    <p className="text-sm text-gray-500">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -134,24 +57,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 px-6 relative" style={{ zIndex: 1 }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to work with us?</h2>
+      <section className="py-16 px-6">
+        <div className="max-w-3xl mx-auto text-center glass-card p-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to get honest advice?</h2>
           <p className="text-lg text-gray-500 mb-8">
-            Get a free consultation and discover how we can help you make smarter auto decisions.
+            Book a free consultation and talk to a real consultant who will review your coverage and help you find the right policy.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact"
-              className="px-8 py-4 text-sm font-semibold text-white rounded-2xl shadow-lg hover:opacity-90 transition-all"
-              style={{ background: 'linear-gradient(135deg, #1e40af, #2563eb)' }}>
-              Get a Free Consultation
-            </Link>
-            <Link href="/services"
-              className="px-8 py-4 text-sm font-semibold text-gray-700 rounded-2xl glass-button">
-              View Our Services
-            </Link>
-          </div>
+          <Link href="/contact"
+            className="inline-flex items-center gap-2 px-10 py-5 text-base font-semibold text-white rounded-2xl shadow-xl hover:opacity-90 transition-all"
+            style={{ background: 'linear-gradient(135deg, #0891b2, #2563eb)' }}>
+            Get a Free Consultation →
+          </Link>
         </div>
       </section>
 
