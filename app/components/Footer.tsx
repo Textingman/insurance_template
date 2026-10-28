@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-start justify-between gap-8">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-3">
-              <span className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>Auto Insurance</span>
+              <span className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>Insurance Consultancy</span>
             </Link>
             <p className="text-sm text-gray-400 max-w-xs">
               Expert consultancy for car selection, auto insurance, and vehicle maintenance.
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-400">&copy; 2026 Auto Insurance Template. All rights reserved.</p>
+          <p className="text-sm text-gray-400">&copy; 2026 Insurance Consultancy Template. All rights reserved.</p>
           <div className="flex items-center gap-3">
             {/* Google */}
             <a href="https://google.com" target="_blank" rel="noopener noreferrer"

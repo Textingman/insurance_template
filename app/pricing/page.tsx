@@ -46,7 +46,6 @@ export default function PricingPage() {
               <div className="mb-2">
                 <span className="text-xs font-semibold text-blue-600 uppercase tracking-widest">Car Selection</span>
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Car Finder & Negotiation</h2>
               <div className="flex items-end gap-1 mb-2">
                 <span className="text-5xl font-black gradient-text-blue">$1,200</span>
                 <span className="text-gray-400 mb-2 text-sm">one-time</span>
@@ -93,7 +92,7 @@ export default function PricingPage() {
                 🛡️
               </div>
               <div className="mb-2">
-                <span className="text-xs font-semibold text-cyan-600 uppercase tracking-widest">Auto Insurance</span>
+                <span className="text-xs font-semibold text-cyan-600 uppercase tracking-widest">Insurance Consultancy</span>
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Insurance Finder</h2>
               <div className="flex items-end gap-1 mb-2">
@@ -130,16 +129,13 @@ export default function PricingPage() {
               </Link>
             </div>
 
-            {/* Maintenance */}
             <div className="glass-card p-8 flex flex-col">
               <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-6"
                 style={{ background: 'rgba(124,58,237,0.1)' }}>
                 🔧
               </div>
               <div className="mb-2">
-                <span className="text-xs font-semibold text-purple-600 uppercase tracking-widest">Maintenance</span>
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Maintenance Reminders</h2>
               <div className="flex items-end gap-1 mb-2">
                 <span className="text-5xl font-black" style={{ background: 'linear-gradient(135deg, #7c3aed, #2563eb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>$30</span>
                 <span className="text-gray-400 mb-2 text-sm">/month</span>
@@ -190,7 +186,6 @@ export default function PricingPage() {
               {[
                 { icon: '🚗', title: 'Car Selection', value: 'Avg. savings: $1,500–$3,000', desc: 'vs. negotiating alone at a dealership' },
                 { icon: '🛡️', title: 'Insurance', value: 'Avg. savings: $400–$800/yr', desc: 'by finding the right coverage at the right price' },
-                { icon: '🔧', title: 'Maintenance', value: 'Avg. savings: $500–$1,200/yr', desc: 'by catching issues early and staying on schedule' },
               ].map(item => (
                 <div key={item.title} className="p-5 rounded-2xl" style={{ background: 'rgba(0,0,0,0.03)' }}>
                   <div className="text-2xl mb-3">{item.icon}</div>

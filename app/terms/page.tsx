@@ -30,7 +30,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-600 leading-relaxed">
-              By accessing or using the Auto Insurance Template consultancy platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Service.
+              By accessing or using the Insurance Consultancy Template consultancy platform (&quot;Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, please do not use the Service.
             </p>
             <p className="text-gray-600 leading-relaxed mt-4">
               These Terms apply to all users of the Service, including individuals seeking consultancy on car selection, auto insurance, and vehicle maintenance.
@@ -40,7 +40,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Service</h2>
             <p className="text-gray-600 leading-relaxed">
-              Auto Insurance Template provides consultancy services related to automotive decisions, including guidance on selecting vehicles, comparing auto insurance options, and planning vehicle maintenance. Our services are informational and advisory in nature. We do not sell vehicles, insurance policies, or automotive parts.
+              Insurance Consultancy Template provides consultancy services related to automotive decisions, including guidance on selecting vehicles, comparing auto insurance options, and planning vehicle maintenance. Our services are informational and advisory in nature. We do not sell vehicles, insurance policies, or automotive parts.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">5. SMS Communications — Transactional Account Alerts</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              By providing your phone number and checking the SMS opt-in box during registration or consultation scheduling, you expressly consent to receive <strong>transactional account alert text messages</strong> from Auto Insurance Template. These messages are limited to account-related notifications, including:
+              By providing your phone number and checking the SMS opt-in box during registration or consultation scheduling, you expressly consent to receive <strong>transactional account alert text messages</strong> from Insurance Consultancy Template. These messages are limited to account-related notifications, including:
             </p>
             <ul className="list-disc pl-6 text-gray-600 space-y-2">
               <li>Consultation appointment confirmations and reminders</li>
@@ -107,7 +107,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Intellectual Property</h2>
             <p className="text-gray-600 leading-relaxed">
-              The Service and its original content, features, and functionality are owned by Auto Insurance Template and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
+              The Service and its original content, features, and functionality are owned by Insurance Consultancy Template and are protected by applicable intellectual property laws. You may not copy, modify, distribute, or create derivative works based on the Service without our express written permission.
             </p>
           </div>
 

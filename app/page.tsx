@@ -32,15 +32,13 @@ export default function HomePage() {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'glass-nav py-3' : 'py-5 bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>Auto Insurance</span>
+            <span className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>Insurance Consultancy</span>
           </div>
 
           <div className="hidden md:flex items-center gap-1">
             {[
               { label: 'Services', href: '/services' },
-              { label: 'Car Selection', href: '/car-selection' },
               { label: 'Insurance', href: '/insurance' },
-              { label: 'Maintenance', href: '/maintenance' },
               { label: 'About', href: '/about' },
             ].map(item => (
               <Link key={item.href} href={item.href} className="px-3 py-2 text-sm text-gray-600 hover:text-gray-900 rounded-lg hover:bg-black/5 transition-all">
@@ -66,9 +64,7 @@ export default function HomePage() {
           <div className="md:hidden glass-nav mt-2 mx-4 rounded-2xl p-4">
             {[
               { label: 'Services', href: '/services' },
-              { label: 'Car Selection', href: '/car-selection' },
               { label: 'Insurance', href: '/insurance' },
-              { label: 'Maintenance', href: '/maintenance' },
               { label: 'About', href: '/about' },
             ].map(item => (
               <Link key={item.href} href={item.href} className="block px-3 py-2.5 text-sm text-gray-700 hover:text-gray-900 rounded-lg hover:bg-black/5">
@@ -133,7 +129,6 @@ export default function HomePage() {
                 title: 'Car Selection',
                 desc: 'Find the perfect vehicle for your lifestyle, budget, and needs. We compare makes, models, and deals.',
                 color: '#1e40af',
-                href: '/car-selection',
               },
               {
                 icon: '🛡️',
@@ -145,9 +140,7 @@ export default function HomePage() {
               {
                 icon: '🔧',
                 title: 'Vehicle Maintenance',
-                desc: 'Keep your car running longer with expert maintenance schedules, tips, and service recommendations.',
                 color: '#7c3aed',
-                href: '/maintenance',
               },
             ].map(card => (
               <Link key={card.title} href={card.href} className="glass-card p-8 text-center group">
@@ -183,7 +176,6 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: '🎯', title: 'Unbiased Advice', desc: 'We work for you, not dealerships or insurers. Our recommendations are always in your best interest.' },
-              { icon: '💡', title: 'Expert Knowledge', desc: 'Years of experience in automotive consulting, insurance analysis, and vehicle maintenance guidance.' },
               { icon: '⚡', title: 'Fast Results', desc: 'Get clear, actionable recommendations quickly — no endless research or confusing jargon.' },
               { icon: '💰', title: 'Save Money', desc: 'Our clients save an average of thousands of dollars on car purchases and insurance premiums.' },
             ].map(item => (
@@ -225,7 +217,6 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <Link href="/car-selection"
                 className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white rounded-xl"
                 style={{ background: 'linear-gradient(135deg, #1e40af, #2563eb)' }}>
                 Explore Car Selection
@@ -303,7 +294,7 @@ export default function HomePage() {
             </div>
 
             <div className="order-1 md:order-2">
-              <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-4">Auto Insurance</p>
+              <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-4">Insurance Consultancy</p>
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight mb-6">
                 Stop overpaying for
                 <br /><span className="gradient-text-blue">auto insurance.</span>
@@ -349,7 +340,6 @@ export default function HomePage() {
               <br /><span className="gradient-text-blue">at its best.</span>
             </h2>
             <p className="text-lg text-gray-500 max-w-2xl mx-auto">
-              Regular maintenance extends the life of your vehicle and prevents costly repairs. We provide personalized maintenance schedules and expert advice.
             </p>
           </div>
 
@@ -358,7 +348,6 @@ export default function HomePage() {
               { icon: '🛢️', title: 'Oil & Fluids', desc: 'Know when to change your oil, coolant, brake fluid, and transmission fluid to keep your engine healthy.', freq: 'Every 3,000–7,500 miles' },
               { icon: '🔋', title: 'Battery & Electrical', desc: 'Prevent unexpected breakdowns with regular battery checks and electrical system inspections.', freq: 'Every 2–3 years' },
               { icon: '🛞', title: 'Tires & Brakes', desc: 'Tire rotation, alignment, and brake inspections keep you safe and improve fuel efficiency.', freq: 'Every 5,000–7,500 miles' },
-              { icon: '🌡️', title: 'Engine Tune-Up', desc: 'Spark plugs, air filters, and fuel system maintenance keep your engine performing at peak efficiency.', freq: 'Every 30,000 miles' },
               { icon: '❄️', title: 'AC & Heating', desc: 'Stay comfortable year-round with regular HVAC system checks and refrigerant top-offs.', freq: 'Annually' },
               { icon: '🔦', title: 'Lights & Safety', desc: 'Ensure all lights, wipers, and safety systems are functioning properly for safe driving.', freq: 'Every 6 months' },
             ].map(item => (
@@ -374,7 +363,6 @@ export default function HomePage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/maintenance"
               className="inline-flex items-center gap-2 px-8 py-4 text-sm font-semibold text-white rounded-2xl shadow-lg hover:opacity-90 transition-all"
               style={{ background: 'linear-gradient(135deg, #1e40af, #2563eb)' }}>
               Get Your Maintenance Schedule
@@ -399,7 +387,6 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { num: '01', title: 'Tell Us Your Needs', desc: 'Share your situation — budget, lifestyle, current vehicle, and goals. No judgment, just facts.', icon: '💬', color: '#1e40af' },
-              { num: '02', title: 'We Analyze Options', desc: 'Our experts research and compare vehicles, insurance plans, or maintenance needs tailored to you.', icon: '🔍', color: '#0891b2' },
               { num: '03', title: 'Get Clear Guidance', desc: 'Receive straightforward recommendations with pros, cons, and our expert opinion.', icon: '📋', color: '#7c3aed' },
               { num: '04', title: 'Make Confident Decisions', desc: 'Move forward knowing you have the best information to make the right choice for your situation.', icon: '✅', color: '#059669' },
             ].map((step, i) => (

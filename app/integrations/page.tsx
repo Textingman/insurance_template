@@ -26,7 +26,7 @@ export default function IntegrationsPage() {
             <br /><span className="gradient-text-green">Bring it with you.</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Employees shouldn&apos;t have to manually log every walk, workout, or activity just to participate in a workplace wellness program. Auto Insurance connects with supported health and fitness platforms so eligible activity can automatically count toward wellness goals.
+            Employees shouldn&apos;t have to manually log every walk, workout, or activity just to participate in a workplace wellness program. Insurance Consultancy connects with supported health and fitness platforms so eligible activity can automatically count toward wellness goals.
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function IntegrationsPage() {
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                   </svg>
                   <p className="text-sm text-green-800">
-                    <strong>Employees choose what information they share.</strong> Permissions can be updated or revoked at any time. Auto Insurance only accesses the specific data types an employee explicitly authorizes.
+                    <strong>Employees choose what information they share.</strong> Permissions can be updated or revoked at any time. Insurance Consultancy only accesses the specific data types an employee explicitly authorizes.
                   </p>
                 </div>
               </div>
@@ -135,7 +135,7 @@ export default function IntegrationsPage() {
             <span className="text-3xl mb-4 block">⚠️</span>
             <h3 className="text-xl font-bold text-gray-900 mb-3">About Integration Support</h3>
             <p className="text-gray-500 max-w-2xl mx-auto">
-              Auto Insurance connects with Apple Health as its primary integration. Devices and apps that sync with Apple Health may contribute eligible activity. We do not claim direct integrations with specific third-party brands unless explicitly supported. Employees should verify their device or app syncs with Apple Health before expecting activity to count.
+              Insurance Consultancy connects with Apple Health as its primary integration. Devices and apps that sync with Apple Health may contribute eligible activity. We do not claim direct integrations with specific third-party brands unless explicitly supported. Employees should verify their device or app syncs with Apple Health before expecting activity to count.
             </p>
           </div>
         </div>
@@ -152,8 +152,8 @@ export default function IntegrationsPage() {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { step: '1', icon: '📱', title: 'Employee connects', desc: 'Employee authorizes Auto Insurance to access specific Apple Health data types they choose.' },
-              { step: '2', icon: '🔄', title: 'Activity syncs', desc: 'Eligible activity from connected apps and devices automatically syncs to Auto Insurance.' },
+              { step: '1', icon: '📱', title: 'Employee connects', desc: 'Employee authorizes Insurance Consultancy to access specific Apple Health data types they choose.' },
+              { step: '2', icon: '🔄', title: 'Activity syncs', desc: 'Eligible activity from connected apps and devices automatically syncs to Insurance Consultancy.' },
               { step: '3', icon: '📊', title: 'Progress updates', desc: 'Activity counts toward active wellness challenges and personal wellness goals in real time.' },
               { step: '4', icon: '⭐', title: 'Rewards earned', desc: 'Completed challenges and milestones earn points that can be redeemed for company rewards.' },
             ].map((item, i) => (
@@ -184,7 +184,7 @@ export default function IntegrationsPage() {
                 { title: 'Employees choose what to share', desc: 'When connecting Apple Health, employees select exactly which data types they authorize. They can enable steps but not heart rate, for example.' },
                 { title: 'Permissions can be revoked anytime', desc: 'Employees can disconnect their health apps or update permissions at any time through their account settings.' },
                 { title: 'Employers see aggregate data only', desc: 'Employers never see individual employee health data. They see aggregate wellness engagement metrics for their programs.' },
-                { title: 'No medical data required', desc: 'Auto Insurance focuses on wellness activity data — steps, workouts, movement. Medical or clinical health data is not required or accessed.' },
+                { title: 'No medical data required', desc: 'Insurance Consultancy focuses on wellness activity data — steps, workouts, movement. Medical or clinical health data is not required or accessed.' },
               ].map(item => (
                 <div key={item.title} className="flex items-start gap-4 p-4 rounded-2xl" style={{ background: 'rgba(0,0,0,0.02)' }}>
                   <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"

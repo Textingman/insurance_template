@@ -27,7 +27,7 @@ export default function Nav() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>
-            Auto Insurance
+            Insurance Consultancy
           </span>
         </Link>
 

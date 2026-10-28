@@ -84,7 +84,7 @@ export default function ServicesPage() {
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-3">
-                  <h2 className="text-2xl font-bold text-gray-900">Auto Insurance Guidance</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">Insurance Consultancy Guidance</h2>
                   <span className="px-3 py-1 text-xs font-semibold text-cyan-700 rounded-full"
                     style={{ background: 'rgba(8,145,178,0.1)' }}>Save Money</span>
                 </div>

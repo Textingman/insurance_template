@@ -6,13 +6,6 @@ import Footer from '../components/Footer';
 
 const SERVICES = [
   {
-    id: 'car-selection',
-    icon: '🚗',
-    label: 'Car Finder & Negotiation',
-    price: '$1,200 one-time',
-    desc: 'Find the right make & model and negotiate with dealerships on your behalf.',
-    color: '#1e40af',
-  },
   {
     id: 'insurance',
     icon: '🛡️',
@@ -22,13 +15,6 @@ const SERVICES = [
     color: '#0891b2',
   },
   {
-    id: 'maintenance',
-    icon: '🔧',
-    label: 'Maintenance Reminders',
-    price: '$30/month',
-    desc: 'Personalized maintenance reminders to keep your car running at its best.',
-    color: '#7c3aed',
-  },
 ];
 
 export default function ConsultationPage() {
@@ -215,10 +201,10 @@ export default function ConsultationPage() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-gray-900">
-                      I consent to receive SMS text messages from Auto Insurance <span className="text-gray-400 font-normal">(optional)</span>
+                      I consent to receive SMS text messages from Insurance Consultancy <span className="text-gray-400 font-normal">(optional)</span>
                     </p>
                     <p className="text-xs text-gray-500 mt-1 leading-relaxed">
-                      By checking this box, you expressly consent to receive text messages from Auto Insurance for the following purposes: <strong>promotional marketing</strong> (special offers, service updates, and promotions), <strong>customer care</strong> (consultation follow-ups, support, and service-related communications), and <strong>transactional account notifications</strong> (booking confirmations, appointment reminders, and account alerts). Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to opt out at any time. Reply <strong>HELP</strong> for help. <strong>No mobile information will be shared with or sold to third parties for marketing or promotional purposes.</strong>
+                      By checking this box, you expressly consent to receive text messages from Insurance Consultancy for the following purposes: <strong>promotional marketing</strong> (special offers, service updates, and promotions), <strong>customer care</strong> (consultation follow-ups, support, and service-related communications), and <strong>transactional account notifications</strong> (booking confirmations, appointment reminders, and account alerts). Message and data rates may apply. Message frequency varies. Reply <strong>STOP</strong> to opt out at any time. Reply <strong>HELP</strong> for help. <strong>No mobile information will be shared with or sold to third parties for marketing or promotional purposes.</strong>
                     </p>
                   </div>
                 </label>

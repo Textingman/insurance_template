@@ -29,7 +29,7 @@ export default function ForEmployersPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-10">
-            Auto Insurance gives HR and people teams the tools to launch connected wellness programs, run challenges, and understand engagement — without adding administrative burden.
+            Insurance Consultancy gives HR and people teams the tools to launch connected wellness programs, run challenges, and understand engagement — without adding administrative burden.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/contact"
@@ -76,7 +76,7 @@ export default function ForEmployersPage() {
               Simple to set up. Easy to run.
             </h2>
             <p className="text-lg text-gray-500">
-              Auto Insurance is designed to minimize HR administration while maximizing employee participation.
+              Insurance Consultancy is designed to minimize HR administration while maximizing employee participation.
             </p>
           </div>
 
@@ -132,7 +132,7 @@ export default function ForEmployersPage() {
                   { icon: '🏆', title: 'Challenge Management', desc: 'Create and launch step challenges, movement streaks, team competitions, and custom wellness goals in minutes.' },
                   { icon: '🎁', title: 'Rewards & Recognition', desc: 'Distribute points, perks, and rewards to recognize wellness participation and healthy habits.' },
                   { icon: '🔐', title: 'Privacy-First Design', desc: 'Employees control their own data. You see what you need to run programs — nothing more.' },
-                  { icon: '📱', title: 'No App to Build', desc: 'Employees use the health apps they already have. Auto Insurance connects the dots.' },
+                  { icon: '📱', title: 'No App to Build', desc: 'Employees use the health apps they already have. Insurance Consultancy connects the dots.' },
                 ].map(item => (
                   <div key={item.title} className="flex items-start gap-4">
                     <span className="text-2xl flex-shrink-0">{item.icon}</span>
@@ -238,7 +238,7 @@ export default function ForEmployersPage() {
             style={{ background: 'linear-gradient(135deg, rgba(240,253,244,0.9), rgba(240,249,255,0.9))' }}>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to launch your wellness program?</h2>
             <p className="text-lg text-gray-500 mb-8">
-              Talk to our team about setting up Auto Insurance for your organization. We&apos;ll help you configure your program, generate Company IDs, and get employees enrolled.
+              Talk to our team about setting up Insurance Consultancy for your organization. We&apos;ll help you configure your program, generate Company IDs, and get employees enrolled.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/contact"

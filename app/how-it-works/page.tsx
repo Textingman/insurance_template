@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
             <br /><span className="gradient-text-green">The experience gets better.</span>
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Auto Insurance connects to the health apps and devices employees already use. No new habits required. No manual logging. Just better workplace wellness.
+            Insurance Consultancy connects to the health apps and devices employees already use. No new habits required. No manual logging. Just better workplace wellness.
           </p>
         </div>
       </section>
@@ -46,7 +46,7 @@ export default function HowItWorksPage() {
                 icon: '🔗',
                 title: 'Connect',
                 color: '#16a34a',
-                desc: 'Your HR team provides a Company ID. Use it to create your Auto Insurance account and connect your supported health apps and devices.',
+                desc: 'Your HR team provides a Company ID. Use it to create your Insurance Consultancy account and connect your supported health apps and devices.',
                 details: [
                   'Enter your Company ID from HR',
                   'Create your employee account',
@@ -69,7 +69,7 @@ export default function HowItWorksPage() {
                   'No manual logging required',
                   'Real-time progress updates',
                 ],
-                note: 'No behavior change required. Auto Insurance works with what you\'re already doing.',
+                note: 'No behavior change required. Insurance Consultancy works with what you\'re already doing.',
               },
               {
                 num: '03',
@@ -99,7 +99,7 @@ export default function HowItWorksPage() {
                   'Redeem points for company rewards',
                   'Track your wellness history over time',
                 ],
-                note: 'Rewards are set by your employer. Auto Insurance distributes them automatically.',
+                note: 'Rewards are set by your employer. Insurance Consultancy distributes them automatically.',
               },
             ].map((step, i) => (
               <div key={step.num} className="glass-card p-8">
@@ -206,7 +206,7 @@ export default function HowItWorksPage() {
             <span className="text-4xl mb-4 block">🔐</span>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">Privacy is built in, not bolted on.</h2>
             <p className="text-gray-500 mb-6">
-              Employees control what they share. Employers see aggregate wellness engagement — never individual health records. Auto Insurance is designed so that participating in wellness programs feels transparent and intentional.
+              Employees control what they share. Employers see aggregate wellness engagement — never individual health records. Insurance Consultancy is designed so that participating in wellness programs feels transparent and intentional.
             </p>
             <Link href="/privacy"
               className="inline-flex items-center gap-2 text-sm font-semibold text-green-600 hover:text-green-700">

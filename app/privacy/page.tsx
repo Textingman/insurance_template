@@ -50,7 +50,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">1. Introduction</h2>
               <p className="text-gray-600 leading-relaxed">
-                Auto Insurance Template (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our auto consultancy platform and services.
+                Insurance Consultancy Template (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our auto consultancy platform and services.
               </p>
               <p className="text-gray-600 leading-relaxed mt-4">
                 We provide consultancy services related to car selection, auto insurance guidance, and vehicle maintenance planning. This policy describes how we handle the information you share with us in the course of receiving these services.
@@ -104,7 +104,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">4. SMS Communications</h2>
               <p className="text-gray-600 mb-4">
-                Auto Insurance Template may send SMS (text message) communications to users who have opted in. Our SMS program is limited exclusively to <strong>transactional account alert text messages</strong>, which may include:
+                Insurance Consultancy Template may send SMS (text message) communications to users who have opted in. Our SMS program is limited exclusively to <strong>transactional account alert text messages</strong>, which may include:
               </p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Consultation appointment confirmations and reminders</li>

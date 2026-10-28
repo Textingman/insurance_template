@@ -21,7 +21,7 @@ export default function InsurancePage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium text-cyan-700 mb-6"
                 style={{ background: 'rgba(8,145,178,0.1)', border: '1px solid rgba(8,145,178,0.3)' }}>
-                <span>🛡️</span> Auto Insurance Consultancy
+                <span>🛡️</span> Insurance Consultancy Consultancy
               </div>
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 tracking-tight mb-6">
                 A real expert reviews
