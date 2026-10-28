@@ -1,0 +1,79 @@
+{
+  "_comment": "MOXXI AUTO INSURANCE TEMPLATE SITE CONFIG — Update all [TEMPLATE] values before deploying",
+  "brand": "Auto Insurance Template",
+  "repo": "auto_insurance_template",
+
+  "domain": "www.autoinsurancetemplate.com",
+  "_domain_note": "[TEMPLATE] Replace with your actual domain",
+
+  "email": "support@autoinsurancetemplate.com",
+  "_email_note": "[TEMPLATE] Replace with your actual support email",
+
+  "phone": "(855) XXX-XXXX",
+  "_phone_note": "[TEMPLATE] Replace with your actual phone number",
+
+  "address": "[Street Address]",
+  "city": "[City, State ZIP]",
+  "_address_note": "[TEMPLATE] Replace with your actual business address",
+
+  "googleAnalyticsId": "G-XXXXXXXXXX",
+  "_ga_note": "[TEMPLATE] Replace with your actual Google Analytics tracking ID",
+
+  "colors": {
+    "primary": "#1e40af",
+    "secondary": "#2563eb",
+    "accent": "#f59e0b",
+    "background": "#ffffff",
+    "_note": "Blue and amber color scheme for auto/insurance consultancy"
+  },
+
+  "metaTitle": "Auto Insurance Template — Car Selection, Insurance & Maintenance Consultancy",
+  "metaDescription": "Expert consultancy helping you choose the right car, find the best auto insurance, and keep your vehicle running at its best.",
+
+  "pages": {
+    "home": "/",
+    "about": "/about",
+    "contact": "/contact",
+    "services": "/services",
+    "carSelection": "/car-selection",
+    "insurance": "/insurance",
+    "maintenance": "/maintenance",
+    "terms": "/terms",
+    "privacy": "/privacy"
+  },
+
+  "content": {
+    "tagline": "Drive Smarter. Save More.",
+    "heroSubtitle": "Expert guidance on selecting the right car, finding the best auto insurance, and keeping your vehicle in peak condition.",
+    "ctaText": "Get a Free Consultation",
+    "services": [
+      "Car Selection Consultancy",
+      "Auto Insurance Guidance",
+      "Vehicle Maintenance Planning"
+    ]
+  },
+
+  "socialLinks": {
+    "linkedin": "[TEMPLATE] https://www.linkedin.com/company/auto-insurance-template",
+    "google": "[TEMPLATE] https://share.google/...",
+    "_note": "[TEMPLATE] Replace with actual social media profile URLs"
+  },
+
+  "vercel": {
+    "projectName": "auto-insurance-template",
+    "framework": "nextjs",
+    "_note": "Deploy to Vercel by importing this GitHub repo"
+  },
+
+  "github": {
+    "repo": "[TEMPLATE] https://github.com/[your-org]/auto_insurance_template",
+    "_note": "[TEMPLATE] Replace with your actual GitHub repo URL after creating it"
+  },
+
+  "smsDisclosures": {
+    "type": "Transactional Account Alerts Only",
+    "optOut": "Reply STOP to any message",
+    "helpContact": "support@autoinsurancetemplate.com",
+    "noMobileSharing": "No mobile information will be shared with or sold to third parties for marketing or promotional purposes"
+  }
+}
